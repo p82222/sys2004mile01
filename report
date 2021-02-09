@@ -1,0 +1,26 @@
+Questions
+1. A constructor is a method that initializes objects, this method is special as it does not have a return type and matches the class name exactly. 
+A constructor gets used when an object is created.
+
+2. 
+
+3. A default constructor is a constructor that gets created when a custom constructor is not made, this default constructor is given default values.
+
+4. A reference is an address that indicates where an objects methods and variables are stored ***
+
+5. 
+Array - Used to store multiple values in a single variable 
+Access/change elements by referring to the index number
+Able to loop through arrays
+
+Arraylist - Resizable array, elements can be added/removed whenever you want
+Access to an element can be used with the get(), set(), remove() methods while using their index numbers
+Able to loop through arraylists
+
+Linkedlist - Like arraylist except items are stored in containers
+Access to an element can be the first or last using the same methods except adding first and last to the suffix
+Also able to loop through linkedlist
+
+
+6. encapsulation is the term used for creating private variable and hiding other data from users and having public setters and getter to access those private variables. 
+This is relevant to this milestone as data such as the product info must only show the name, id, and price of the item
