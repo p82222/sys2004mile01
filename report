@@ -22,4 +22,5 @@ Access to an element can be the first or last using the same methods except addi
 Also able to loop through linkedlist
 
 
-6. encapsulation is the term used for creating private variable and hiding other data from users and having public setters and getter to access those private variables. This is relevant to this milestone as data such as the product info must only show the name, id, and price of the item
+6. encapsulation is the term used for creating private variable and hiding other data from users and having public setters and getter to access those private variables. 
+This is relevant to this milestone as data such as the product info must only show the name, id, and price of the item
