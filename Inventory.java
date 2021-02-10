@@ -60,6 +60,7 @@ public class Inventory {
                 Scanner keyboard = new Scanner(System.in);
                 System.out.println("enter adding quantity amount");
                 int num = keyboard.nextInt();
+                num += set.getValue();
                 set.setValue(num);
                 return;
             }
@@ -163,9 +164,13 @@ public class Inventory {
      * @return null, if cannot product ID matches
      *
      */
-    public Product getProducInfo(int id) {
+    public Product getProductInfo(int id) {
         for (Product set : products.keySet()) {
             if (set.getId() == id) {
+                System.out.println("Prodcut name:" + set.getName());
+                System.out.println("Prodcut ID:" + set.getId());
+                System.out.println("Prodcut price:" + set.getPrice());
+
                 return set;
             }
         }
