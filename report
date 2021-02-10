@@ -2,11 +2,12 @@ Questions
 1. A constructor is a method that initializes objects, this method is special as it does not have a return type and matches the class name exactly. 
 A constructor gets used when an object is created.
 
-2. 
+2. A store manager constructor was used as when you create a new store manager it should also create a new inventory. 
 
 3. A default constructor is a constructor that gets created when a custom constructor is not made, this default constructor is given default values.
 
-4. A reference is an address that indicates where an objects methods and variables are stored ***
+4. A reference is an address that indicates where an objects methods and variables are stored, they are used in the store manager class to 
+create a new inventory that will be used in that specific store manager class.
 
 5. 
 Array - Used to store multiple values in a single variable 
@@ -21,6 +22,7 @@ Linkedlist - Like arraylist except items are stored in containers
 Access to an element can be the first or last using the same methods except adding first and last to the suffix
 Also able to loop through linkedlist
 
+In this milestone we used arraylist and hashmaps to call the productid and quantity in the store manager class
 
 6. encapsulation is the term used for creating private variable and hiding other data from users and having public setters and getter to access those private variables. 
 This is relevant to this milestone as data such as the product info must only show the name, id, and price of the item
