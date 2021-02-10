@@ -28,6 +28,12 @@ public class Inventory {
 
     }
 
+    public Inventory(){
+
+        this.product = null;
+        this.quantity = 0;
+    }
+
     /**
      * Get this Inventory's type.
      */
