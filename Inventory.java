@@ -11,7 +11,7 @@ public class Inventory {
      */
 
 
-    private String type = "";                    // type of the Product
+    //private String type = "";                    // type of the Product
     private int quantity = 0;                    // quantity of Product
     private  Product product = null;
     private HashMap<Product, Integer> products = new HashMap<Product, Integer>();      // products the inventory is tracking
@@ -21,7 +21,7 @@ public class Inventory {
      * Creates a new Inventory with the supplied attributes.
      * Set default values upon object creation
      */
-    public Inventory(Product product, int quantity, String type) {
+    public Inventory(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
         this.products.put(product, quantity);
@@ -34,20 +34,8 @@ public class Inventory {
         this.quantity = 0;
     }
 
-    /**
-     * Get this Inventory's type.
-     */
-    public String getType() {
-        return type;
-    }
 
 
-    /**
-     * Set the type of this Inventory.
-     */
-    public void setType(String newType) {
-        type = newType;
-    }
 
     /**
      * Set the quantity of this Inventory.
@@ -116,6 +104,14 @@ public class Inventory {
         return;
 
     }
+
+    public HashMap<Product, Integer> getProducts(HashMap<Product, Integer> products) {
+
+        return this.products;
+
+    }
+
+
 
 
 
