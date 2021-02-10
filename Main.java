@@ -9,6 +9,7 @@ public class Main {
 
         Inventory inventory = new Inventory(apple, 10);
 
+
         StoreManager storeManager = new StoreManager(inventory);
 
         System.out.println("test \"inventory...getProductInfo:\"");
@@ -44,7 +45,7 @@ public class Main {
         System.out.println(inventory.getQuantity(002));
         System.out.println();
 
-         */
+
 
         System.out.println("==================================");
         System.out.println();
@@ -53,12 +54,16 @@ public class Main {
         storeManager.checkStock(001);
         storeManager.checkStock(003);
 
-        System.out.println("test \"storeManager...: \"");
+         */
+
+        System.out.println("test \"storeManager...{001, 1}, {002, 15}, {003, 3}: \"");
         int[][] cart = new int[5][2];
+        int[][] cart2 = new int[5][2];
 
         cart = new int[][]{{001, 1}, {002, 15}, {003, 3}};
+        cart2 = new int[][]{{001, 10}};
 
-        storeManager.processTransaction(cart);
+        storeManager.processTransaction(cart2);
 
 
 
