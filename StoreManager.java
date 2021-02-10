@@ -1,3 +1,6 @@
+//STUDENT NAME: Chia-Yu Liu //
+//STUDENT ID: 100698737     //
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -10,7 +13,7 @@ public class StoreManager {
     /**
      * Creates a new inventory
      */
-    Inventory inventory = new Inventory();
+    private Inventory inventory = new Inventory();
 
     public StoreManager(){
         this.inventory = null;

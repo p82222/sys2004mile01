@@ -1,3 +1,6 @@
+//STUDENT NAME: Chia-Yu Liu //
+//STUDENT ID: 100698737     //
+
 import java.util.ArrayList;
 
 public class Product {
@@ -5,13 +8,14 @@ public class Product {
 
     private String name;                     // name of the Product
     private int id;                          // id of Product
-    private float price;                     // price of Product
+    private double price;                     // price of Product
+
 
 
     /**
      * Creates a new Product with the supplied attributes.
      */
-    public Product(String name, int id, float price) {
+    public Product(String name, int id, double price) {
         this.name = name;
         this.id = id;
         this.price = price;
@@ -34,7 +38,7 @@ public class Product {
     /**
      * Get this Product's price.
      */
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
