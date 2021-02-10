@@ -6,6 +6,7 @@ import java.util.Map;
 public class StoreManager {
 
     private HashMap<Product, Integer> products = new HashMap<Product, Integer>();
+
     /**
      * Creates a new inventory
      */
@@ -52,5 +53,6 @@ public class StoreManager {
         }
     }
 }
+
 
 
