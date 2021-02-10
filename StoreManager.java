@@ -12,11 +12,11 @@ public class StoreManager {
     Inventory inventory = new Inventory();
 
     public StoreManager(){
-      this.inventory = null;
+        this.inventory = null;
     }
 
     public StoreManager(Inventory inventory){
-      this.inventory = inventory;
+        this.inventory = inventory;
     }
 
     /**
@@ -24,7 +24,7 @@ public class StoreManager {
      */
     public void checkStock(int id){
         int stock;
-        stock = Obj.getQuantity(id);
+        stock = inventory.getQuantity(id);
         System.out.println("Stock is " +stock);
     }
 
@@ -35,17 +35,22 @@ public class StoreManager {
         float total = 0;
         boolean success = true;
         for(int[] i : cart){
-            if(Obj.getQuantity(i[0]) >= i[1]){
-                total += Obj.getProducts(i[0]).getPrice() * i[1];
-                Obj.removeQuantity(i[0]);
+            if(inventory.getQuantity(i[0]) >= i[1]){
+                total += inventory.getProductInfo(i[0]).getPrice() * i[1];
+                inventory.removeQuantity(i[0]);
             }
             else{
                 success = false;
                 break;
             }
-            if(){
+            if(!success){
                 System.out.println("-1");
+            }
+            else{
+                System.out.println("Total = " +total);
             }
         }
     }
 }
+
+
