@@ -10,7 +10,7 @@ public class StoreManager {
      * Creates a new inventory
      */
     Inventory Obj = new Inventory();
-    Product product = new Product();
+
     /**
      * Check how much stock of a given product is in the inventory
      */
@@ -20,10 +20,24 @@ public class StoreManager {
         System.out.println("Stock is " +stock);
     }
 
-    public void processTransaction(){
+    /**
+     * Checks the quantity exists and if it does processes the transaction
+     */
+    public void processTransaction(int cart[][]){
         float total = 0;
-        for(Map.Entry value : products.entrySet()){
-            if(Obj.getQuantity(product.getID))
+        boolean success = true;
+        for(int[] i : cart){
+            if(Obj.getQuantity(i[0]) >= i[1]){
+                total += Obj.getProducts(i[0]).getPrice() * i[1];
+                Obj.removeQuantity(i[0]);
+            }
+            else{
+                success = false;
+                break;
+            }
+            if(){
+                System.out.println("-1");
+            }
         }
     }
 }
