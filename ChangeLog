@@ -1,0 +1,3 @@
+StoreManager changelog(I think this is how its done)
+•	checkStock method calls the getQuantity method in the Inventory class as it already checks the amount of stock depending on the product id
+•	processTransaction iterates over the cart 2d array to check the product id and that ids quantity and totals all the products then removes that products quantity from the overall stock. If that products id doesn’t have the quantity, it sets the success of the transaction to false and then prints different outcomes depending on that Boolean.
