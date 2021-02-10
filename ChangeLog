@@ -6,5 +6,6 @@ products then removes that products quantity from the overall stock. If that pro
 
 Product Class:
 • creation of a Product contructor for the name, id, and price of the products
+
 Inventory Class:
 • We used a hashmap in the Product class as we can loop through each product to find the quantity or modify the quantity information.
