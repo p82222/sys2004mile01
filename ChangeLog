@@ -1,10 +1,14 @@
 StoreManager changelog(I think this is how its done)
 •	checkStock method calls the getQuantity method in the Inventory class as it already checks the amount of stock depending on the product id
 •	processTransaction iterates over the cart 2d array to check the product id and that ids quantity and totals all the products then removes that products quantity from the overall stock. If that products id doesn’t have the quantity, it sets the success of the transaction to false and then prints different outcomes depending on that Boolean.
+processTransaction iterates over the cart 2d array to check the product id and that ids quantity and totals all the
+products then removes that products quantity from the overall stock. If that products id doesn’t have the quantity, it sets the success of the transaction to false and then prints different outcomes depending on that Boolean.
 
 Inventory changelog
 •	Set variable to private so only local class can access, created getter and for other classes to access the information . No setter since users are not allowed to change the quantity without properly calling the methods
-•	Using hash map to store the product info and the corresponding quantity data. It will allow methods loop through the data based in product id to find the quantity since the product class has no quantity attribute
+• We used a hashmap in the Product class as we can loop through each product to find the quantity or modify the quantity information.
+
 
 Product changelog
 •	Set variable to private so only local class can access, no setter nor getter since no users should change the data directly
+• creation of a Product contructor for the name, id, and price of the products
