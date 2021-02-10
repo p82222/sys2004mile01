@@ -35,20 +35,17 @@ public class StoreManager {
     public void processTransaction(int cart[][]){
         float total = 0;
         boolean success = true;
-        for(int[] i : cart){
-            if(inventory.getQuantity(i[0]) >= i[1]){
+        for(int[] i : cart) {
+            if (inventory.getQuantity(i[0]) >= i[1]) {
                 total += inventory.getProductInfo(i[0]).getPrice() * i[1];
                 inventory.removeQuantity(i[0]);
-            }
-            else{
+            } else {
                 success = false;
                 break;
             }
-
-
         }
         if(!success){
-            System.out.println("-1");
+            System.out.println("Transaction Failed");
         }
         else{
             System.out.println("Total = " +total);
