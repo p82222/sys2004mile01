@@ -9,14 +9,14 @@ public class StoreManager {
     /**
      * Creates a new inventory
      */
-    Inventory Obj = new Inventory();
+    Inventory inventory = new Inventory();
 
     public StoreManager(){
-      this.obj = null;
+      this.inventory = null;
     }
 
     public StoreManager(Inventory inventory){
-      this.obj = inventory;
+      this.inventory = inventory;
     }
 
     /**
