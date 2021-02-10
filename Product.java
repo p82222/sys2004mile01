@@ -1,3 +1,6 @@
+//Keefer Belanger//
+//St# 101152085//
+
 import java.util.ArrayList;
 
 public class Product {
