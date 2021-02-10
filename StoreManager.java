@@ -14,8 +14,10 @@ public class StoreManager {
     /**
      * Check how much stock of a given product is in the inventory
      */
-    public void checkStock(){
-        return Obj.getQuantity(Obj.getProducts());
+    public void checkStock(int id){
+        int stock;
+        stock = Obj.getQuantity(id);
+        System.out.println("Stock is " +stock);
     }
 
     public void processTransaction(){
