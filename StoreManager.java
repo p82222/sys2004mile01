@@ -11,6 +11,14 @@ public class StoreManager {
      */
     Inventory Obj = new Inventory();
 
+    public StoreManager(){
+      this.obj = null;
+    }
+
+    public StoreManager(Inventory inventory){
+      this.obj = inventory;
+    }
+
     /**
      * Check how much stock of a given product is in the inventory
      */
